@@ -12,16 +12,16 @@ class Boulangerie {
     }
     bilan(){
         console.log(`BILAN`);
-        bernard.bilan();
+        //bernard.bilan();
         var bernardBilan = bernard.bilan();
 
-        paul.bilan();
+        //paul.bilan();
         var paulBilan = paul.bilan();
 
-        virginie.bilan() ;
+        //virginie.bilan() ;
         var virginieBilan = virginie.bilan();
 
-        violaine.bilan();
+        //violaine.bilan();
         var violaineBilan = violaine.bilan();
 
         var FabricationsTotaux = bernardBilan+paulBilan;
