@@ -31,9 +31,9 @@ class Boulangerie {
 
         console.log('Totaux');
         // console.log(`Fabrications = ${bernard.bilan()} + ${paul.bilan()}`);
-        console.log(`  Fabrications =`,FabricationsTotaux);
-        console.log(`  Ventes =`,VentesTotaux);
-        console.log(`  Résultat =`,RésultatTotaux);
+        console.log(`  Fabrications =`,FabricationsTotaux.toFixed(2));
+        console.log(`  Ventes =`,VentesTotaux.toFixed(2));
+        console.log(`  Résultat =`,RésultatTotaux.toFixed(2));
 
 
     }

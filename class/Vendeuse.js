@@ -19,11 +19,16 @@ class Vendeuse {
             //console.log(fabrication);
             this.ventesChiffres = fabrication.split('&');
             //console.log(this.ventesChiffres);
-            var TotalProduit = this.ventesChiffres[0] * this.ventesChiffres[2]
-            console.log(`  ${this.ventesChiffres[0]} ${this.ventesChiffres[1]} x ${this.ventesChiffres[2]} = ${TotalProduit}`);
+            var TotalProduit = this.ventesChiffres[0] * this.ventesChiffres[2];
+
+            var ventesChiffres2 = this.ventesChiffres[2];
+            //console.log(fabricationsChiffres2);
+            ventesChiffres2 = parseFloat(ventesChiffres2).toFixed(2);
+
+            console.log(`  ${this.ventesChiffres[0]} ${this.ventesChiffres[1]} x ${ventesChiffres2} = ${TotalProduit.toFixed(2)}`);
             Total = Total + TotalProduit;
         }
-        console.log (`  Total = ${Total}`);
+        console.log (`  Total = ${Total.toFixed(2)}`);
         return Total;
     }
 }

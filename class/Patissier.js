@@ -17,11 +17,17 @@ class Patissier extends Boulanger{
             //console.log(fabrication);
             this.fabricationsChiffres = fabrication.split('&');
             //console.log(this.fabricationsChiffres);
-            var TotalProduit = this.fabricationsChiffres[0] * this.fabricationsChiffres[2]
-            console.log(`  ${this.fabricationsChiffres[0]} ${this.fabricationsChiffres[1]} x ${this.fabricationsChiffres[2]} = ${TotalProduit}`);
+            var TotalProduit = this.fabricationsChiffres[0] * this.fabricationsChiffres[2];
+            var fabricationsChiffres2 = this.fabricationsChiffres[2];
+            
+            //console.log(fabricationsChiffres2);
+            fabricationsChiffres2 = parseFloat(fabricationsChiffres2).toFixed(2);
+            //console.log(fabricationsChiffres2);
+
+            console.log(`  ${this.fabricationsChiffres[0]} ${this.fabricationsChiffres[1]} x ${fabricationsChiffres2} = ${TotalProduit.toFixed(2)}`);
             Total = Total + TotalProduit;
         }
-        console.log (`  Total = ${Total}`);
+        console.log (`  Total = ${Total.toFixed(2)}`);
         return Total;
     }
 }
