@@ -6,7 +6,9 @@ class Produit {
         this.nom = nom;
         this.coutFabrication = coutFabrication;
         this.prixVente = prixVente;
-        console.log(`${this.nom} est un produit (${this.coutFabrication}/${this.prixVente})`);
+        if (this.nom != "charlotte"){   
+            console.log(`${this.nom} est un produit (${this.coutFabrication}/${this.prixVente})`);
+        }
     }
     
 }
