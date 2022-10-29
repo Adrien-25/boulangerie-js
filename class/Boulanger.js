@@ -7,7 +7,7 @@ class Boulanger {
         console.log(`${this.prenom} est un boulanger`);
     }
     fabriquer( produit, quantite) {
-        this.fabrications.push(new Fabrication(produit, quantite));
+        //this.fabrications.push(new Fabrication(produit, quantite));
         console.log(`${this.prenom} fabrique ${quantite} ${produit.nom}`);
     }
     bilan() {

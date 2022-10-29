@@ -7,7 +7,7 @@ class Vendeuse {
         console.log(`${this.prenom} est une vendeuse`);
     }
     vendre( produit, quantite) {
-        this.ventes.push(new this.prenom(prenom));
+        //this.ventes.push(new this.prenom(prenom));
         console.log(`${this.prenom} vend ${quantite} ${produit.nom}`);
     }
     bilan() {
