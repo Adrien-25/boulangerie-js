@@ -12,8 +12,8 @@ class Vendeuse {
     }
     bilan() {
         console.log(`Ventes de ${this.prenom} :`);
-        for (let fabrication of this.fabrications) {
-            console.log (`${fabrication.quantite} ${fabrication.produit.nom}`);
+        for (let vente of this.ventes) {
+            console.log (`${vente.quantite} ${vente.produit.nom}`);
         }
     }
 }
